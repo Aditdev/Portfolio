@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+            <h1>Aditya Lawate's Portfolio</h1>
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect?</a>
+                <div>
+        </nav>
+        <section class='heroSection'>
+            <img class='profileImage' src=".\images\PFP.jpeg" />
+            <div class='herosectionDetails'>
+                <h1>Aditya Lawate</h1>
+                <h3>Full-Stack Developer at ShapeAI</h3>
+            </div>
+        </section>
+        <section class='aboutMe' id='aboutMe'>
+            <h1>What I Do...</h1>
+            <p>
+                I'm a very much dedicated as well as self-motivated person. Team leadership is not Dicatorship it's more
+                like friendship. I have lead 2-3 projects in my college as well as out of College. I'm currently
+                selected as Campus Ambassador at <f>E-cell IIT Bombay.</f>
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class='skillsAndProjects'>
+            <div class='skills' id='skills'>
+                <h1 class='cardHeading'>Skills</h1>
+                <img title='HTML' src='./images/html.svg'>
+                <img title='CSS' src='./images/css.svg'>
+                <img title='Javascript' src='./images/javascript.svg'>
+                <img src="./images/C_Programming_Language.svg" title="C-programming">
+                <img title='C++' src='./images/cplusplus-svgrepo-com (1).svg'>
+                <img title='Python' src='./images/py-svgrepo-com.svg'>
+                <img title='Machine Learning' src='./images/machine-learning-03-svgrepo-com.svg'>
+                <img title='TensorFlow' src='./images/tensorflow-svgrepo-com.svg'>
+                <img title='Java' src='./images/java-svgrepo-com.svg'>
+                <img title='Kotlin' src='./images/kotlin-svgrepo-com.svg'>
+            </div>
+            
+            <!-- Projects Section -->
+            
+            <div class='projects' id='projects'>
+                <h1 class='cardHeading'>Projects</h1>
+                <div class='projectContainer'>
+                    <img src='./images/py-svgrepo-com.svg'/>
+                    <img src='./images/machine-learning-03-svgrepo-com.svg' />
+                    <div class='projectDescription'>
+                        <h4>Machine Learning Model</h4>
+                        <p>In this model I created a Linear regression Model using Python </p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='./images/py-svgrepo-com.svg'/>
+                    <img src='./images/tensorflow-svgrepo-com.svg' />
+                    <div class='projectDescription'>
+                        <h4>ANN Deep Learning MNIST model</h4>
+                        <p>In this model I created a ANN model with <f>95%</f> accuracy using Python and TensorFlow </p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='./images/css.svg' />
+                    <img src='./images/html.svg' />
+                    <!-- <img src='./images/.svg' /> -->
+                    <div class='projectDescription'>
+                        <h4>Portfolio website</h4>
+                        <p><i>The page you are just looking at!</i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact us form -->
+
+        <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect!</h2> <br><br>
+                <div class='formGroup'>
+                    <label for='name'>Enter Full Name</label><br />
+                    <input type='text' id='name' placeholder='Full Name' />
+                </div>
+                <div class='formGroup'>
+                    <label for='email'>Email</label><br />
+                    <input type='text' id='email' placeholder='Email' />
+                </div>
+                <div class='formGroup'>
+                    <label for='message'>Message</label><br />
+                    <textarea placeholder="Send some message!" id="message" name="w3review" rows="4"
+                        cols="50"></textarea>
+                </div>
+                <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
